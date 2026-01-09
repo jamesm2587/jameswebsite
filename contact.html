@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PAGE TITLE: Update with your business name -->
+    <title>Contact | Mirdamadi Design</title>
+    <!-- META DESCRIPTION: Add your SEO description here -->
+    <meta name="description" content="<!-- YOUR CONTACT PAGE META DESCRIPTION HERE -->">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+         ======================================== -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">MIRDAMADI DESIGN</a>
+            
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+    <main>
+
+        <!-- ================================
+             PAGE HEADER
+             ================================ -->
+        <section class="page-header">
+            <div class="container">
+                <!-- PAGE TITLE: e.g., "Contact Us" or "Get in Touch" -->
+                <h1><!-- CONTACT PAGE TITLE --></h1>
+            </div>
+        </section>
+
+        <!-- ================================
+             CONTACT SECTION
+             Two-column: Form on left, Info on right
+             ================================ -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- LEFT COLUMN: Contact Form -->
+                    <div class="contact-form-wrapper">
+                        
+                        <!-- FORM HEADING (Optional) -->
+                        <h2 style="margin-bottom: 2rem;"><!-- FORM HEADING: e.g., "Send Us a Message" --></h2>
+                        
+                        <!-- CONTACT FORM -->
+                        <!-- NOTE: Add your form action URL (e.g., Formspree, Netlify Forms, or your backend) -->
+                        <form class="contact-form" action="#" method="POST">
+                            
+                            <!-- NAME FIELD -->
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="<!-- NAME PLACEHOLDER: e.g., 'Your Name' -->"
+                                    required
+                                >
+                            </div>
+                            
+                            <!-- EMAIL FIELD -->
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="<!-- EMAIL PLACEHOLDER: e.g., 'your@email.com' -->"
+                                    required
+                                >
+                            </div>
+                            
+                            <!-- SUBJECT FIELD -->
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    placeholder="<!-- SUBJECT PLACEHOLDER: e.g., 'Project Inquiry' -->"
+                                    required
+                                >
+                            </div>
+                            
+                            <!-- MESSAGE FIELD -->
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    placeholder="<!-- MESSAGE PLACEHOLDER: e.g., 'Tell us about your project...' -->"
+                                    required
+                                ></textarea>
+                            </div>
+                            
+                            <!-- SUBMIT BUTTON -->
+                            <button type="submit" class="submit-btn">
+                                <!-- BUTTON TEXT: e.g., "Send Message" -->
+                                Send Message
+                            </button>
+                            
+                        </form>
+                    </div>
+                    
+                    <!-- RIGHT COLUMN: Contact Information -->
+                    <aside class="contact-info">
+                        
+                        <!-- CONTACT INFO HEADING -->
+                        <h3><!-- CONTACT INFO HEADING: e.g., "Contact Information" --></h3>
+                        
+                        <!-- EMAIL -->
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <!-- YOUR EMAIL ADDRESS -->
+                            <p><!-- YOUR EMAIL ADDRESS HERE --></p>
+                        </div>
+                        
+                        <!-- PHONE -->
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <!-- YOUR PHONE NUMBER -->
+                            <p><!-- YOUR PHONE NUMBER HERE --></p>
+                        </div>
+                        
+                        <!-- ADDRESS -->
+                        <div class="contact-detail">
+                            <h4>Address</h4>
+                            <!-- YOUR STREET ADDRESS -->
+                            <p><!-- YOUR STREET ADDRESS --></p>
+                            <!-- YOUR CITY, STATE, ZIP -->
+                            <p><!-- YOUR CITY, STATE ZIP CODE --></p>
+                        </div>
+                        
+                        <!-- BUSINESS HOURS (Optional) -->
+                        <div class="contact-detail">
+                            <h4>Hours</h4>
+                            <!-- YOUR BUSINESS HOURS -->
+                            <p><!-- YOUR BUSINESS HOURS: e.g., "Monday - Friday: 9am - 5pm" --></p>
+                        </div>
+                        
+                    </aside>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">MIRDAMADI DESIGN</div>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-icon" aria-label="Pinterest">PIN</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">IN</a>
+                    <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mirdamadi Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navList').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
